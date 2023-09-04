@@ -21,6 +21,7 @@ class ListUsers{
     }
 
     addUSers(param){
+if(checkInput()== false)
         this.users.push(param)
     }
 }
@@ -45,3 +46,25 @@ function creatUser(){
     arrUsers.addUSers(user)
     console.log(arrUsers)
 }
+//verificação dos inputs
+function checkInput(){
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let cellphone = document.getElementById("cellphone").value;
+    let url = document.getElementById("url").value;
+    let date = document.getElementById("date").value;
+    let email = document.getElementById("email").value;
+    let cep = document.getElementById("cep").value;
+    let city = document.getElementById("city").value;
+    let insta = document.getElementById("insta").value;
+    let github = document.getElementById("github").value;
+
+    if(name == ''|| phone == ''|| cellphone == ''|| url == ''|| date == ''|| email == ''|| cep == ''|| city == ''|| insta == ''|| github == '') {
+console.log(" NÃO PASSOU PELOS INPUT VAZIOS")
+return false;
+    }else{
+        console.log("PASSOU PELOS INPUTS VAZIOS")
+        return true;
+    }
+}
+
