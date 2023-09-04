@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(201, 207, 212);
+}
+
+h1{
+    text-align: center;
+}
+
+.inputs{
+    text-align: center;
+}
