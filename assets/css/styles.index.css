@@ -14,3 +14,42 @@ h1{
 .inputs{
     text-align: center;
 }
+
+#newscreen{
+    position: fixed;
+    right: 0;
+    top: 0;    
+
+}
+
+#btn-create{
+    background-color: blue;
+    color: white;
+    border-radius: 2px;
+}
+
+#btn-create:hover{
+    background-color: rgb(144, 144, 255);
+    transition: 0.2;
+  
+}
+
+.allContact {
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

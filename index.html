@@ -9,6 +9,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <title>Agenda Telefônica</title>
 </head>
 
@@ -17,26 +18,30 @@
         <h1>Agenda Telefônica</h1>
         <div id="div-inp" class="inputs">
             <input type="text" placeholder="nome completo" id="name" required>
-            <input type="number" placeholder="telefone fixo" id="phone" required>
-            <input type="number" placeholder="telefone celular" id="cellphone" required>
+            <input type="text" placeholder="telefone fixo" id="phone"  maxlength="11" required>
+            <input type="text" placeholder="telefone celular" id="cellphone" maxlength="11" required>
+            <br>
             <input type="text" placeholder="url da foto" id="url" required>
             <input type="date" id="date" required>
             <input type="email" placeholder="E-mail" id="email" required>
+            <br>
             <input type="text" placeholder="CEP" id="cep" required>
             <input type="text" placeholder="Cidade" id="city" required>
             <input type="text" placeholder="@instagram" id="insta" required>
+            <br>
             <input type="text" placeholder="@GitHUb" id="github" required>
 
             <div id="button">
-                <button type="button" onclick="creatUser()">enviar</button>
+                <p id="msg"></p>
+                <button id="btn-create" type="button" onclick="creatUser()">enviar</button>
             </div>
 
         </div>
     </div>
 
-    <div id="">
-        <p id="resposta"></p>
-    </div>
+    <div id="result"></div>
+    <div onclick="newscreen()" id="newscreen"></div>
+    <div id="card2"></div>
 </body>
 
 </html>
